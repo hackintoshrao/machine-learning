@@ -13813,6 +13813,7 @@ AAAAADZyCgAAAICNnAIAAABgI6cAAAAA2MgpAAAAADYBtSLC24xPfzgAAAAASUVORK5CYII=
 </li>
 <li>The model fits in well since the r-square scores well. </li>
 </ul>
+<p>Initially with increase in number of training points the training score increases and later it attains a steady value, whereas the testing score decreases with increase in the number of testing points and then it attains a steady value. But Since the curves converge decently and attain a steady value more data wont help in this of less complex or underfitting models. But for complex models more data certianly helps.</p>
 
 </div>
 </div>
@@ -14636,6 +14637,7 @@ apiTNTMzM7Ma5mTNzMzMrIY5WTMzMzOrYf8PSAk87spHarcAAAAASUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Grid Search techique is way to performance tune the model, it tries different combinations of the hyper parameters (like degree of model) and cross validates them to identify the combination of parameters for the best fit.</p>
+<p>Grid Search exhaustively considers all combinations of parameter space and finds out the best combination of hyper parameters. For example with a parameter space of [1,2,3,4,5], Grid search evaluates the performance of the model for each of the value in the parameter space and help understand the score for different depth/complexity of model.</p>
 
 </div>
 </div>
@@ -14656,7 +14658,7 @@ apiTNTMzM7Ma5mTNzMzMrIY5WTMzMzOrYf8PSAk87spHarcAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>K-Fold Cross Validation is used to validate your model through generating different combinations of the data you already have. For example, if you have 100 samples, you can train your model on the first 90, and test on the last 10. Then you could train on samples 1-80 &amp; 90-100, and test on samples 80-90. Then repeat. This way, you get different combinations of train/test data, essentially giving you ‘more’ data for validation from your original data. It helps to understand how well the model fits into new data.</p>
+<p>K-Fold Cross Validation is used to validate your model through generating different combinations of the data you already have. For example, if you have 100 samples, the sample is split into 10 equal parts(K parts), then you can train your model on the first 90, and test on the last 10. Then you could train on samples 1-80 &amp; 90-100, and test on samples 80-90. Then repeat. The K results are averaged to get the final estimation. This way, you get different combinations of train/test data, essentially giving you ‘more’ data for validation from your original data. It helps to understand how well the model fits into new data.</p>
 
 </div>
 </div>
